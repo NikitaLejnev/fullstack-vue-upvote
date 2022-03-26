@@ -20,6 +20,7 @@
           class="media"
           v-for="submission of sortedSubmissions"
           :key="submission.id"
+          :class="{ 'blue-border': submission.votes >= 20 }"
         >
           <figure class="media-left">
             <p class="image is-64x64">
